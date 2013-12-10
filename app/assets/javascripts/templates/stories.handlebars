@@ -28,5 +28,7 @@
       </div>
     </div>
 {{else}}
-  <button {{ action 'login' }}>Login</button>
+  {{#link-to 'login'}} Login {{/link-to}}
+  or
+  {{#link-to 'users.new'}} Register {{/link-to}} 
 {{/if}}

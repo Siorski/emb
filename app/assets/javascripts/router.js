@@ -2,6 +2,9 @@
 
 Emb.Router.map(function() {
 	this.resource('about');
+	this.resource('users', function(){
+		this.route('new');
+	});
 	this.route('login');
   this.resource('stories', function() {
  		this.resource('story', {path: ':story_id'}, function() {
