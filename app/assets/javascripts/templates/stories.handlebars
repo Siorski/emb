@@ -1,0 +1,32 @@
+  <link rel="stylesheet" href="../../stylesheets/normalize.css">
+  <link rel="stylesheet" href="../../stylesheets/application.css">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+{{#if session.isAuthenticated}}
+  <button {{ action 'logout' }}>Logout</button>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <table class='table'>
+            <thead>
+              <tr><th>Recent Stories</th></tr>
+            </thead>
+            {{#each}}
+            <tr><td>
+              <button {{action 'delete' this}}>X </button>
+              {{#link-to 'story' this}}
+              {{title}} 
+              {{/link-to}} 
+              <small class='muted'> by {{author}} created at {{published}} </small>   
+            </td></tr>
+            {{/each}}
+          </table>
+          {{#link-to 'stories.new'}} Create a new Story {{/link-to}} 
+        </div>
+        <div class="span9">
+          {{outlet}}
+        </div>
+      </div>
+    </div>
+{{else}}
+  <button {{ action 'login' }}>Login</button>
+{{/if}}

@@ -1,0 +1,15 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+}
+
+.active {
+	font-weight: bold;
+}
+
+img.center{
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+
+}

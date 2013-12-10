@@ -1,0 +1,17 @@
+<form {{action 'update' this on="submit"}} >
+	{{#if isSaving}}
+		<p> Saving Record </p>
+	{{/if}}
+	<p>
+		Title: {{input type="text" value=title}}
+	</p>
+
+	<p>
+		Body: {{textarea value=body}}
+	</p>
+
+	<p>
+		Author: {{input type="text" value=author}}
+	</p>
+	<button> Update</button>
+</form>
