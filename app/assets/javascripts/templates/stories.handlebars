@@ -1,8 +1,13 @@
-  <link rel="stylesheet" href="../../stylesheets/normalize.css">
-  <link rel="stylesheet" href="../../stylesheets/application.css">
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../stylesheets/bootstrap.css" >
+<link rel="stylesheet" href="../../stylesheets/bootstrap.min.css" >
+<link rel="stylesheet" href="../../stylesheets/normalize.css">
+<link rel="stylesheet" href="../../stylesheets/application.css">
+<link rel="stylesheet" href="../../stylesheets/bootstrap-glyphicons.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"> </script>
+
 {{#if session.isAuthenticated}}
-  <button {{ action 'logout' }}>Logout</button>
+  <!-- <button {{ action 'logout' }}>Logout</button> -->
+  <div id="linki">
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
@@ -10,15 +15,20 @@
             <thead>
               <tr><th>Recent Stories</th></tr>
             </thead>
+     
             {{#each}}
             <tr><td>
-              <button {{action 'delete' this}}>X </button>
+              <button {{action 'delete' this}} class="btn btn-danger btn-sm">
+               <span class="glyphicon glyphicon-trash"> </span>
+             </button>  
               {{#link-to 'story' this}}
-              {{title}} 
+              {{title }} 
               {{/link-to}} 
-              <small class='muted'> by {{author}} created at {{published}} </small>   
+            
+              <small class='muted'>  by {{author}} created at {{published}} </small>   
             </td></tr>
             {{/each}}
+
           </table>
           {{#link-to 'stories.new'}} Create a new Story {{/link-to}} 
         </div>
@@ -27,8 +37,12 @@
         </div>
       </div>
     </div>
+  </div>
 {{else}}
+<p>
   {{#link-to 'login'}} Login {{/link-to}}
   or
   {{#link-to 'users.new'}} Register {{/link-to}} 
+</p>
 {{/if}}
+

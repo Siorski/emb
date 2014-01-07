@@ -1,20 +1,23 @@
+<link rel="stylesheet" href="../../stylesheets/bootstrap.css" >
+<link rel="stylesheet" href="../../stylesheets/bootstrap.min.css" >
 <link rel="stylesheet" href="../../stylesheets/normalize.css">
 <link rel="stylesheet" href="../../stylesheets/application.css">
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../stylesheets/bootstrap-glyphicons.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"> </script>
 
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="#/about"> About</a>
-      <ul class="nav">
+
+  <nav class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav ">
+        <li>{{#link-to 'about' }} About {{/link-to}} </li>
         <li>{{#link-to 'stories'}}Stories{{/link-to}}</li>
-        <li> {{#link-to 'users.new'}} Register {{/link-to}} </li>  
+        <li>{{#link-to 'users.new'}} Register {{/link-to}} </li>
+        <li>{{#link-to 'login'}} Login {{/link-to}} </li>
+        <li>
+          {{#if session.isAuthenticated}} 
+            <button class="btn btn-danger btn-default" {{ action 'logout' }}> Logout </button>
+          {{/if}} 
+        </li>
       </ul>
-    </div>
-  </div>
-
-
+  </nav>
 
   {{outlet}}
-
-
-<!-- <img src="../../images/emberjs-logo.png" alt="logoember" class="center"> -->

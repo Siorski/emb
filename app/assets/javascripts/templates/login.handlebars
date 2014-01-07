@@ -1,8 +1,13 @@
+<div id="login">
 <form {{action login on='submit'}}>
-  <label for="identification">Login</label>
-  {{view Ember.TextField id='identification' valueBinding='identification' placeholder='Enter Login'}}
-  <label for="password">Password</label>
-  {{view Ember.TextField id='password' type='password' valueBinding='password' placeholder='Enter Password'}}
-  <button type="submit">Login</button>
+	<fieldset>
+  	<p><label for="identification">Login: </label></p>
+  	{{view Ember.TextField type="login" id='identification' valueBinding='identification' placeholder='Enter Login'}} 
+  	<p><label for="password">Password: </label></p>
+  	{{view Ember.TextField id='password' type='password' valueBinding='password' placeholder='Enter Password'}}
+  </br>
+  	<button class="btn btn-primary btn-default" type="submit">Login</button>
+  </fieldset>
 </form>
 
+</div>

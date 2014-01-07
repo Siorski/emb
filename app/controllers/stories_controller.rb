@@ -13,6 +13,7 @@ class StoriesController < ApplicationController
 	end
 
 	def update
+		sleep 1;
 		render json: Story.find(params[:id]).tap { |s| s.update_attributes(story) };
 	end
 

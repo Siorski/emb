@@ -7,7 +7,9 @@ Emb.StoryEditRoute = Ember.Route.extend({
 
 	actions: {
 		update: function(story) {
-			story.save();
+			story.save().then(function(){
+				route.transitionTo('stories');
+			});
 		}
 	}
 });

@@ -15,4 +15,12 @@ Emb.Router.map(function() {
 });
 
 Emb.ApplicationRoute = Ember.Route.extend(Ember.SimpleAuth.ApplicationRouteMixin);
-
+/*
+Emb.ApplicationRoute = Ember.Route.extend(Ember.SimpleAuth.ApplicationRouteMixin, {
+	actions: {
+		loginFailed: function(error) {
+			this.controllerFor('application').set('loginErrorMessage', error.message);
+		}
+  }
+});
+*/

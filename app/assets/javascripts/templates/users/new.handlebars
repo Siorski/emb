@@ -1,11 +1,11 @@
+<div id="register">
 <form {{action 'create' this on="submit"}} >
-	<p>
-		Name: {{input type="text" value=name}}
-	</p>
-
-	<p>
-		Author: {{input type="password" value=password}}
-	</p>
-	<button> Create </button>
+	<fieldset>
+		<p><label> Your login: </label> </p> 
+		{{view Ember.TextField type='login' value=name}}
+		<p><label> Your	password: </label> </p> 
+		{{view Ember.TextField type='password' value=password}}
+		</br>
+		<button class="btn btn-info btn-default" type="submit">Create</button>
+	</fieldset>
 </form>
-

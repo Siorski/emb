@@ -1,15 +1,170 @@
-/* Put your CSS here */
 html, body {
-    margin: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+  background-color:#8DA9D3;
+}
+
+.about{
+text-align: center;
+}
+
+.ember-view a {
+	font-size: 14px;
+	color: #B53535;
+	font-style: italic; 
+}
+
+#linki .ember-view.active {
+	background-color: #8DA9D3;
+	font-size: 16px;
 }
 
 .active {
 	font-weight: bold;
+	background-color: #29d6bc;
+}
+
+.table {
+	width: 400px;
+}
+
+.span9{ 
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	width: 600px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	font-weight: italic;
+	background-color: #B7BCCA;
 }
 
 img.center{
 	display: block;
 	margin-left: auto;
   margin-right: auto;
+}
 
+.navbar-default {
+    background-color: #588ecb;
+    border-color: #a95043;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.err {
+	background-color: #EB0211;
+	font-size: 16px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 100px;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+.btn.btn-primary.btn-default {
+	margin-left: 130px;
+}
+
+.btn.btn-info.btn-default {
+	margin-left: 130px;
+}
+
+.btn.btn-danger.btn-default{
+    position: fixed;
+    top: 0.5em;
+    right: 12em;
+}
+
+.btn.btn-success.btn-default{
+    position: fixed;
+    top: 0.5em;
+    right: 12em;
+}
+
+/*LOGIN */
+
+#login {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#login fieldset {
+	background-color: #D6B65D;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #49463F;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input[type="login"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/*REGISTER*/
+
+#register {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#register fieldset {
+	background-color: #413F37;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#register fieldset p {
+	color: #D5B048;
+	margin-bottom: 14px;
+}
+
+#register fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#register fieldset input[type="login"], #register fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
