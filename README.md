@@ -7,9 +7,10 @@ Stworzyliśmy prostą aplikacje przy użyciu Ruby on Rails oraz [Ember.js](http:
 
 ## Materiały pomocnicze
 Jako że był to nasz pierwszy kontakt z technologią Ember.js sporo korzystaliśmy z materiałów znalezionych w sieci. Najważniejszym źródłem informacji są [Guides](http://emberjs.com/guides/) na głównej stronie Ember.js. Ember korzysta z szablonów stron (templates) wykorzystując bibliotekę [Handlebars.js](http://handlebarsjs.com/). Przydane są filmiki, które można znaleźć na serwisie Youtube :
-- Tom Dale - [Building an Ember.js Application](http://www.youtube.com/watch?v=1QHrlFlaXdI)
-- Yehuda Katz - [Building Web Applications with Ember.js](http://www.youtube.com/watch?v=u6RFyVN9sNg)
-- Yehuda Katz - [Building a Client-Side With Ember and Rails](http://www.youtube.com/watch?v=BpQj9_qEUAc)
+- Tom Dale, [Building an Ember.js Application](http://www.youtube.com/watch?v=1QHrlFlaXdI)
+- Yehuda Katz,
+  * [Building Web Applications with Ember.js](http://www.youtube.com/watch?v=u6RFyVN9sNg)
+  * [Building a Client-Side With Ember and Rails](http://www.youtube.com/watch?v=BpQj9_qEUAc)
 
 Bardzo pomocnym narzędziem jest wtyczka [Ember Inspector](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) do przeglądarki Chrome. Dzięki niej możemy podejrzeć routing, zobaczyć dane z Ember Data i ogólnie zobaczyć informację na temat naszej aplikacji.
 
