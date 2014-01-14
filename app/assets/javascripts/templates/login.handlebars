@@ -1,13 +1,18 @@
+{{#if session.isAuthenticated}}
+	<div class="select">
+		<p> You are already logged in. </p>
+	</div>
+{{else}}	
 <div id="login">
-<form {{action login on='submit'}}>
-	<fieldset>
-  	<p><label for="identification">Login: </label></p>
-  	{{view Ember.TextField type="login" id='identification' valueBinding='identification' placeholder='Enter Login'}} 
-  	<p><label for="password">Password: </label></p>
-  	{{view Ember.TextField id='password' type='password' valueBinding='password' placeholder='Enter Password'}}
-  </br>
-  	<button class="btn btn-primary btn-default" type="submit">Login</button>
-  </fieldset>
-</form>
-
+	<form {{action login on='submit'}}>
+		<fieldset>
+  		<p><label for="identification">Login: </label></p>
+  		{{view Ember.TextField type="login" id='identification' valueBinding='identification' placeholder='Enter Login'}} 
+  		<p><label for="password">Password: </label></p>
+  		{{view Ember.TextField id='password' type='password' valueBinding='password' placeholder='Enter Password'}}
+  		</br>
+  		<button class="btn btn-primary btn-default" type="submit">Login</button>
+  	</fieldset>
+	</form>
 </div>
+{{/if}}

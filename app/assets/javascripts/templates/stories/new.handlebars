@@ -1,18 +1,21 @@
-<form {{action 'create' this on="submit"}} >
-	{{#if isSaving}}
-		<p> Saving Record </p>
-	{{/if}}
-	<p>
-		Title: {{input type="text" value=title}}
-	</p>
+<div id="new">
+	<form {{action 'create' this on="submit"}} >
+		<fieldset>
+			{{#if isSaving}}
+				<p> Saving Record </p>
+			{{/if}}
+			<p><label for="title"> Title: </label> </p>
+			{{input type="title" value=title}} 
+			<p> <label for="body"> Body:  </label> </p>
+			{{textarea id="textar" value=body}}
+			<p><label for="author"> Author: </label> </p>
+			{{input type="author" value=author}} 
+			</br></br>
+			<button class="btn btn-primary btn-default"> Create </button>
+		</fieldset>
+	</form>
+</div>
 
-	<p>
-		Body: {{textarea value=body}}
-	</p>
 
-	<p>
-		Author: {{input type="text" value=author}}
-	</p>
-	<button> Create </button>
-</form>
+
 

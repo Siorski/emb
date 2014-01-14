@@ -168,3 +168,104 @@ input {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+
+.log {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+}
+
+.select {
+	text-align: center;
+	font-size: 16px;
+}
+
+/* EDIT  */
+
+#edit {
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 200px;
+}
+
+#edit fieldset {
+	background-color: #70BD91;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#edit fieldset p {
+	text-align: center;
+	color: #49463F;
+	margin-bottom: 1px;
+}
+
+#edit fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+ #edit fieldset input[type="title"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#textar {
+	width: 330px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+}
+
+/* NEW STORY */
+#new {
+	margin-left: 150px;
+	margin-top: 20px;
+	width: 400px;
+}
+
+#new fieldset {
+	background-color: #C0C0C0;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#new fieldset p {
+	text-align: center;
+	color: #49463F;
+	margin-bottom: 1px;
+}
+
+#new fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#new fieldset input[type="title"], #new fieldset input[type="author"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#textar {
+	width: 330px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+
+}

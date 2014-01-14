@@ -6,7 +6,6 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"> </script>
 
 {{#if session.isAuthenticated}}
-  <!-- <button {{ action 'logout' }}>Logout</button> -->
   <div id="linki">
     <div class="container-fluid">
       <div class="row-fluid">
@@ -39,10 +38,13 @@
     </div>
   </div>
 {{else}}
-<p>
-  {{#link-to 'login'}} Login {{/link-to}}
-  or
-  {{#link-to 'users.new'}} Register {{/link-to}} 
-</p>
+<div class="log">
+  <p>
+    You must be logged in to access this page.
+    {{#link-to 'login'}}Login{{/link-to}}
+    or
+    {{#link-to 'users.new'}}register{{/link-to}}.
+  </p>
+</div>
 {{/if}}
 
