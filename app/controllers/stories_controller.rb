@@ -9,7 +9,7 @@ class StoriesController < ApplicationController
 
 	def create
 		sleep 1;
-		render json: Story.create(story);		
+		render json: Story.create(story);	
 	end
 
 	def update

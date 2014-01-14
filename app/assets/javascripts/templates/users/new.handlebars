@@ -1,3 +1,8 @@
+{{#if session.isAuthenticated}}
+		<div class="select">
+		<p> You are already logged in. You must logout before registration. </p>
+	</div>
+{{else}}	
 <div id="register">
 <form {{action 'create' this on="submit"}} >
 	<fieldset>
@@ -9,3 +14,4 @@
 		<button class="btn btn-info btn-default" type="submit">Create</button>
 	</fieldset>
 </form>
+{{/if}}
